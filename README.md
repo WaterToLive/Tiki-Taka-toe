@@ -1,6 +1,11 @@
 # Tiki-Taka-toe
 Tiki-Taka-toe
 
+##HOMEWORK 4/6:
+- Add p2 prompt
+- Check to see if p2 move is valid
+- Assign "O" to the p2 move on the board
+
 ##HOMEWORK 3/23: 
 - check to see if p1[0] is between 0-2
 - if it is, check to see if p1[p1.length-1] (last character) is between 0-2

@@ -25,6 +25,15 @@
         } else {
             console.log("Thank you for inputing your number")
         }
+
+        console.log(p2 [0] + "," + p2[p2.length-1])
+        if (p2[0] >= 0 && p2[0] <=2 && p2[length-1] <= 2 &&  p2[length-1]>= 0) {
+            board[p2[0]][p2[p1.lenth-1]] = "X"; 
+            console.table(board);
+            console.log("Your numbers must be betwen 0 and 2")
+        } else {
+            console.log("Thank you for inputing your number")
+        }
             //if p1[p1.length-1] is between 0-2...then:
                 //if it is...console "good move"
                 //if it isn't... console "must be between 0-2

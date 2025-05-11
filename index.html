@@ -47,11 +47,12 @@
         function setup() {
             createCanvas(900,900)
             background("orange")
+            for (i=0; i<2; i++){  
+                let button = createButton('Click Me!!');  
+                button.position(0,0);
+               button.style('width:300px; height:300px')
+            }         
         
-            let button = createButton('Click Me!!');  
-
-            button.position(0,0);
-            button.style('width:300px; height:300px')         
         }
     </script>
 </body>

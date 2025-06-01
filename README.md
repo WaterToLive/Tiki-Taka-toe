@@ -1,6 +1,7 @@
 # Tiki-Taka-toe
 Tiki-Taka-toe
-
+##HOMEWORK 6/01:
+ADDING X'S AND O'S INSTEAD OF BUTTONS.
 ##HOMEWORK 4/6:
 - Add p2 prompt
 - Check to see if p2 move is valid

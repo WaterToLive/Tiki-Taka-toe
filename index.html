@@ -68,8 +68,11 @@
         function doubleClicked() {  
             console.log(mouseX, mouseY)
             //Row #1
-            if(mouseX > 0 && mouseX < 300 && mouseY > 0 && mouseY < 300) {
-               buttons[0].hide();
+             if(mouseX > 0 && mouseX < 300 && mouseY > 0 && mouseY < 300) {
+                buttons[0].hide();
+                fill("blue");
+                textSize("300");
+                text("X", 0, 300);
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 0 && mouseY < 300){
                 buttons[1].hide();
             }else if (mouseX > 600 && mouseX < 900 && mouseY > 0 && mouseY < 300){
@@ -86,7 +89,7 @@
                 buttons[6].hide();
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 600 && mouseY < 900) {
                 buttons[7].hide();
-            } else buttons[8].hide {
+            } else buttons[8].hide(); {
 
             }
         }

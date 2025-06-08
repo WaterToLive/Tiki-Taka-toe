@@ -51,6 +51,9 @@
             for (i=0; i<9; i++){  
                 buttons[i] = createButton('Click Me!!');  
                 buttons[i].style('width:300px; height:300px');
+                fill("blue");
+                textSize(300);
+                textAlign(CENTER, CENTER);
             }         
             //first row
             buttons[0].position(0,0);
@@ -70,26 +73,41 @@
             //Row #1
              if(mouseX > 0 && mouseX < 300 && mouseY > 0 && mouseY < 300) {
                 buttons[0].hide();
-                fill("blue");
-                textSize("300");
-                text("X", 0, 300);
+                text("X", 150, 150);
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 0 && mouseY < 300){
                 buttons[1].hide();
+                 text("X", 450, 150);
+
             }else if (mouseX > 600 && mouseX < 900 && mouseY > 0 && mouseY < 300){
                 buttons[2].hide();
+                text("X", 750, 150);
+
             //ROW #2
             }else if (mouseX > 0 && mouseX < 300 && mouseY > 300 && mouseY < 600) {
                 buttons[3].hide();
+                 text("X", 150, 450);
+
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 300 && mouseY < 600) {
                 buttons[4].hide();
+                 text("X", 450, 450);
+
             }else if (mouseX > 600 && mouseX < 900 && mouseY > 300 && mouseY < 600) {
                 buttons[5].hide();
+                 text("X", 750, 450);
+
             //ROW #3
             }else if (mouseX > 0 && mouseX < 300 && mouseY > 600 && mouseY < 900) {
                 buttons[6].hide();
+                 text("X", 150, 750);
+
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 600 && mouseY < 900) {
                 buttons[7].hide();
-            } else buttons[8].hide(); {
+                text("X", 450, 750);
+
+            } else buttons[8].hide();
+                text("X", 750, 750);
+
+            {
 
             }
         }

@@ -76,6 +76,7 @@
              if(mouseX > 0 && mouseX < 300 && mouseY > 0 && mouseY < 300) {
                 buttons[0].hide();
                 text(tracker, 150, 150);
+                board[0][0] = tracker;
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 0 && mouseY < 300){
                 buttons[1].hide();
                  text(tracker, 450, 150);
@@ -109,9 +110,7 @@
             } else buttons[8].hide();
                 text(tracker, 750, 750);
 
-            {
-
-            }
+            
             counter++
             if (counter%2 == 0){
                 tracker = "O"

@@ -8,7 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.min.js"></script>
 </head>
 <body>
-    <script>
+    <div id="your-div-id"></div>
+   
+   <script>
+     let cnv;
      let tracker = "X"
      let counter = 1;
         let buttons = [];
@@ -49,19 +52,25 @@
         //HERE IS OUR GAMEBOARD FROM P5JS.
 
         function setup() {
+           cnv = createCanvas(900,900);
+           let newCanvasX=(windowWidth-900)/2
+           let newCanvasY=(windowHeight-900)/2
+           cnv.position(newCanvasX,newCanvasY);
             createCanvas(900,900)
+            cnv.parent("your-div-id");
             background("orange")
             for (i=0; i<9; i++){  
                 buttons[i] = createButton('Click Me!!');  
+                buttons[i].parent("your-div-id");
                 buttons[i].style('width:300px; height:300px');
                 fill("blue");
                 textSize(300);
                 textAlign(CENTER, CENTER);
             }         
             //first row
-            buttons[0].position(0,0);
-            buttons[1].position(300,0);
-            buttons[2].position(600,0);
+            buttons[0].position(0,0,"relative");
+            buttons[1].position(300,0,"relative");
+            buttons[2].position(600,0,"relative");
             //second row
             buttons[3].position(0,300);
             buttons[4].position(300,300);

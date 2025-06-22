@@ -1,5 +1,16 @@
 body {
-    height:100vh;
-     background-color: rgb(10, 230, 246);
-    background-image: url ("SOCCCERR PITCH.jpg");
+    background-color: rgb(10, 230, 246);
+    background-image: url("SOCCCERR PITCH.jpg");
+    background-size: 200px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+
+}
+
+#your-div-id{
+    width:900px;
+    height:900px;
+
 }

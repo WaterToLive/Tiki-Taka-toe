@@ -2,15 +2,12 @@ body {
     background-color: rgb(10, 230, 246);
     background-image: url("SOCCCERR PITCH.jpg");
     background-size: 200px;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    
-
 }
 
 #your-div-id{
     width:900px;
     height:900px;
-
+    position: absolute;
+    top: calc(50% - 450px);
+    left: calc(50% - 450px);
 }

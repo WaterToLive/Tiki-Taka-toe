@@ -66,9 +66,9 @@
                 textAlign(CENTER, CENTER);
             }         
             //first row
-            buttons[0].position(0,0,"relative");
-            buttons[1].position(300,0,"relative");
-            buttons[2].position(600,0,"relative");
+            buttons[0].position(0,0,);
+            buttons[1].position(300,0,);
+            buttons[2].position(600,0,);
             //second row
             buttons[3].position(0,300);
             buttons[4].position(300,300);
@@ -83,8 +83,12 @@
             //Row #1
              if(mouseX > 0 && mouseX < 300 && mouseY > 0 && mouseY < 300) {
                 buttons[0].hide();
+                if (board[0][0] == ""){
                 text(tracker, 150, 150);
                 board[0][0] = tracker;
+                }else{
+                    alert("Bad move! Lost ur turn")
+                }
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 0 && mouseY < 300){
                 buttons[1].hide();
                  text(tracker, 450, 150);

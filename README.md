@@ -1,5 +1,11 @@
+
 # Tiki-Taka-toe
+
+
 Tiki-Taka-toe
+## Homework 7/06:
+Adding winning Logic for second row!
+
 ##HOMEWORK 6/01:
 ADDING X'S AND O'S INSTEAD OF BUTTONS.
 

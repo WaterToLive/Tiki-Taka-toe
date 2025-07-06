@@ -20,11 +20,7 @@
             [" "," "," "],
             [" "," "," "]
         ] 
-        console.table(board);
-        if (board[0][0] != " "){
-            if(board[0][0] == board[0][1] && board[0][1] == board [0][2])
-            alert("WINNER WINNER CHICKEN DINNER")
-        }
+       
 
         // let p1 = prompt(" Player 1: Please enter your next move , Row(#) Column(#)")
         // let p2 = prompt(" Player 2: Please enter you next move  , Row(#) Column(#)")
@@ -129,6 +125,11 @@
             } else buttons[8].hide();
                 text(tracker, 750, 750);
 
+             console.table(board);
+        if (board[0][0] != " "){
+            if(board[0][0] == board[0][1] && board[0][1] == board [0][2])
+            alert("WINNER WINNER CHICKEN DINNER")
+        }
             
             counter++
             if (counter%2 == 0){

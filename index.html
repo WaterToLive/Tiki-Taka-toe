@@ -21,36 +21,13 @@
             [" "," "," "]
         ] 
         console.table(board);
-
-        let p1 = prompt(" Player 1: Please enter your next move , Row(#) Column(#)")
-        let p2 = prompt(" Player 2: Please enter you next move  , Row(#) Column(#)")
-        /* while(true) {
-            
-         }
-        console.log(p1 [0] + "," + p1[p1.length-1])
-        if (p1[0] >= 0 && p1[0] <=2 && p1[p1.length-1] <= 2 &&  p1[p1.length-1]>= 0) {
-            board[p1[0]][p1[p1.length-1]] = "X"; 
-            console.table(board);
-            console.log("Your numbers must be betwen 0 and 2")
-        } else {
-            console.log("Thank you for inputing your number")
+        if (board[0][0] != " "){
+            if(board[0][0] == board[0][1] && board[0][1] == board [0][2])
+            alert("WINNER WINNER CHICKEN DINNER")
         }
 
-        console.log(p2 [0] + "," + p2[p2.length-1])
-        if (p2[0] >= 0 && p2[0] <=2 && p2[p2.length-1] <= 2 &&  p2[p2.length-1]>= 0) {
-            board[p2[0]][p2[p2.length-1]] = "O"; 
-            console.table(board);
-            console.log("Your numbers must be betwen 0 and 2")
-        } else {
-            console.log("Thank you for inputing your number")
-        }
-            //if p1[p1.length-1] is between 0-2...then:
-                //if it is...console "good move"
-                //if it isn't... console "must be between 0-2
-        //I LOVE POTATO CHIPS AND WATERMELON.
-        */
-    
-        //HERE IS OUR GAMEBOARD FROM P5JS.
+        // let p1 = prompt(" Player 1: Please enter your next move , Row(#) Column(#)")
+        // let p2 = prompt(" Player 2: Please enter you next move  , Row(#) Column(#)")
 
         function setup() {
            cnv = createCanvas(900,900);

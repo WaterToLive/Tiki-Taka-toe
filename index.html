@@ -56,7 +56,7 @@
             //Row #1
              if(mouseX > 0 && mouseX < 300 && mouseY > 0 && mouseY < 300) {
                 buttons[0].hide();
-                if (board[0][0] == ""){
+                if (board[0][0] == " "){
                 text(tracker, 150, 150);
                 board[0][0] = tracker
                 }else{
@@ -64,7 +64,7 @@
                 }
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 0 && mouseY < 300){
                 buttons[1].hide();
-                if (board[0][1] == ""){
+                if (board[0][1] == " "){
                  text(tracker, 450, 150);
                  board[0][1] = tracker
                 }else{
@@ -73,7 +73,7 @@
 
             }else if (mouseX > 600 && mouseX < 900 && mouseY > 0 && mouseY < 300){
                 buttons[2].hide();
-               if (board[0][2] == ""){
+               if (board[0][2] == " "){
                  text(tracker, 750, 150);
                  board[0][2] = tracker
                 }else{
@@ -83,7 +83,7 @@
             //ROW #2
             }else if (mouseX > 0 && mouseX < 300 && mouseY > 300 && mouseY < 600) {
                 buttons[3].hide();
-                 if (board[1][0] == ""){
+                 if (board[1][0] == " "){
                  text(tracker, 150, 450);
                  board[1][0] = tracker
                 }else{
@@ -91,7 +91,7 @@
                 }
             }else if (mouseX > 300 && mouseX < 600 && mouseY > 300 && mouseY < 600) {
                 buttons[4].hide();
-                if (board[1][1] == ""){
+                if (board[1][1] == " "){
                  text(tracker, 450, 450);
                  board[1][1] = tracker
                 }else{
@@ -99,7 +99,7 @@
                 }
             }else if (mouseX > 600 && mouseX < 900 && mouseY > 300 && mouseY < 600) {
                 buttons[5].hide();
-                 if (board[1][2] == ""){
+                 if (board[1][2] == " "){
                  text(tracker, 750, 450);
                  board[1][2] = tracker
                 }else{
@@ -122,28 +122,29 @@
                 }else{
                     alert("Bad move! Lost ur turn")
                 }
-            } else buttons[8].hide();{
-                if(board[2][2] == ""){
+            } else{ buttons[8].hide();
+                if(board[2][2] == " "){
                 text(tracker, 750, 750);
                 board[2][2] = tracker
             }else{
                 alert("Bad move , lost ur turn")
             }
+        }
              console.table(board);
       // rows
-          if (board[0][0] != "Click Me!!"){
+          if (board[0][0] != " "){
             if (board[0][0] == board[0][1] && board[0][1] == board[0][2]){
             alert("WINNER WINNER CHICKEN DINNER")
             }
         }
             
-        if (board[1][0] != "Click Me!!"){
+        if (board[1][0] != " "){
             if(board[1][0] == board[1][1] && board[1][1] == board[1][2]){
             alert("WINNER WINNER CHICKEN DINNER")
             }
         }  
        
-          if (board[2][0] != "Click Me!!"){
+          if (board[2][0] != " "){
             if(board[2][0] == board[2][1] && board[2][1] == board[2][2]){
             alert("WINNER WINNER CHICKEN DINNER")
             }
@@ -151,19 +152,19 @@
 
       //verticals 
 
-        if (board[0][0] != "Click Me!!"){
+        if (board[0][0] != " "){
             if(board[0][0] == board[1][0] && board[1][0] == board[2][0]){
             alert("WINNER WINNER CHICKEN DINNER")
             }
         }  
 
-          if (board[0][0] != "Click Me!!"){
+          if (board[0][0] != " "){
             if(board[0][1] == board[1][1] && board[1][1] == board[2][1]){
             alert("WINNER WINNER CHICKEN DINNER")
             }
         }  
 
-          if (board[0][0] != "Click Me!!"){
+          if (board[0][0] != " "){
             if(board[0][2] == board[1][2] && board[1][2] == board[2][2]){
             alert("WINNER WINNER CHICKEN DINNER")
             }
@@ -173,13 +174,13 @@
       
         //diagonals
 
-          if (board[0][0] != "Click Me!!"){
+          if (board[0][0] != " "){
             if(board[0][0] == board[1][1] && board[1][1] == board[2][2]){
             alert("WINNER WINNER CHICKEN DINNER")
             }
         }  
 
-          if (board[0][0] != "Click Me!!"){
+          if (board[0][0] != " "){
             if(board[0][2] == board[1][1] && board[1][1] == board[2][0]){
             alert("WINNER WINNER CHICKEN DINNER")
             }

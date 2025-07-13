@@ -123,7 +123,11 @@
                     alert("Bad move! Lost ur turn")
                 }
             } else buttons[8].hide();{
+                if(board[2][2] == ""){
                 text(tracker, 750, 750);
+                board[2][2] = tracker
+            }else{
+                alert("Bad move , lost ur turn")
             }
              console.table(board);
       // rows

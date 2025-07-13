@@ -126,15 +126,63 @@
                 text(tracker, 750, 750);
 
              console.table(board);
-        if (board[0][0] != " "){
-            if(board[0][0] == board[0][1] && board[0][1] == board [0][2])
+      // rows
+          if (board[0][0] != " "){
+            if (board[0][0] == board[0][1] && board[0][1] == board[0][2]){
             alert("WINNER WINNER CHICKEN DINNER")
+            }
         }
             
-        if (board[0][0] != " "){
-            if(board[0][2] == board[1][2] && board[1][2] == board [2][2])
+        if (board[1][0] != " "){
+            if(board[1][0] == board[1][1] && board[1][1] == board[1][2]){
             alert("WINNER WINNER CHICKEN DINNER")
+            }
         }  
+       
+          if (board[2][0] != " "){
+            if(board[2][0] == board[2][1] && board[2][1] == board[2][2]){
+            alert("WINNER WINNER CHICKEN DINNER")
+            }
+        }  
+
+      //verticals 
+
+        if (board[0][0] != " "){
+            if(board[0][0] == board[1][0] && board[1][0] == board[2][0]){
+            alert("WINNER WINNER CHICKEN DINNER")
+            }
+        }  
+
+          if (board[0][0] != " "){
+            if(board[0][1] == board[1][1] && board[1][1] == board[2][1]){
+            alert("WINNER WINNER CHICKEN DINNER")
+            }
+        }  
+
+          if (board[0][0] != " "){
+            if(board[0][2] == board[1][2] && board[1][2] == board[2][2]){
+            alert("WINNER WINNER CHICKEN DINNER")
+            }
+        }  
+      
+      
+      
+        //diagonals
+
+          if (board[0][0] != " "){
+            if(board[0][0] == board[1][1] && board[1][1] == board[2][2]){
+            alert("WINNER WINNER CHICKEN DINNER")
+            }
+        }  
+
+          if (board[0][0] != " "){
+            if(board[0][2] == board[1][1] && board[1][1] == board[2][0]){
+            alert("WINNER WINNER CHICKEN DINNER")
+            }
+        }  
+
+
+
         
         counter++
             if (counter%2 == 0){
